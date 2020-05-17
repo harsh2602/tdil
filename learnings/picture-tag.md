@@ -1,4 +1,4 @@
-### HTML 5.1 <picture> tag
+### HTML 5.1 ```<picture>``` tag
 
 CSS has always been a weak area for me. It's something I have to resort to google search to fix out whatever bugs I worled on for `Secure Remote Commerce(SRC)` project.
 This week I decided to tackle this problem and started learning about `Flexbox and CSS Grid` through a Frontend Masters course by [Jen Kramer's Course](https://frontendmasters.com/courses/css-grids-flexbox/). During a course, she highlighted about the HTML5.1 `<picture>` tag as means to improve performance.
