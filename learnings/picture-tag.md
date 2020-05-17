@@ -1,7 +1,6 @@
 ### HTML 5.1 ```<picture>``` tag
 
-CSS has always been a weak area for me. It's something I have to resort to google search to fix out whatever bugs I worled on for `Secure Remote Commerce(SRC)` project.
-This week I decided to tackle this problem and started learning about `Flexbox and CSS Grid` through a Frontend Masters course by [Jen Kramer's Course](https://frontendmasters.com/courses/css-grids-flexbox/). During a course, she highlighted about the HTML5.1 `<picture>` tag as means to improve performance.
+This week I started learning about `Flexbox and CSS Grid` through a Frontend Masters course by [Jen Kramer's Course](https://frontendmasters.com/courses/css-grids-flexbox/). During a course, she highlighted about the HTML5.1 `<picture>` tag as means to improve performance.
 
 Suppose I have a responsive web page where I have separate layout I want to render an image. It would be a bad idea to load the same size image for all screen types:  **Mobile, Tablet** or **Desktop**. A large image on desktop/laptop is fine where most probably the user is on a faster wi-fi network. But that would be a bad choice on a mobile device with a slower data connection.
 
