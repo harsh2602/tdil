@@ -1,6 +1,6 @@
 ## Hooks Readme
 
-Shout out to `Steve Kinney` and his FrontendMasters [course](https://frontendmasters.com/courses/pure-react-state/)for making a great React State management Hooks course.
+Shout out to `Steve Kinney` and his FrontendMasters [course](https://frontendmasters.com/courses/pure-react-state/) for making a great React State management Hooks course.
 
 1. [A refresher to Class Based State](class-based-state.md)
 2. [useState](useState.md)
