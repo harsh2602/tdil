@@ -69,7 +69,7 @@ function moveElement(duration, distance, element) {
 }
 ```
 
-*For differences between performance.now and Date.now: https://developer.mozilla.org/en-US/docs/Web/API/Performance/now
+* For differences between performance.now and Date.now: https://developer.mozilla.org/en-US/docs/Web/API/Performance/now
 
 Just like setInterval, requestAnimationFrame also returns a `long` integer value that uniquely identifies the callback. To cancel the callback we could use `cancelAnimationFrame()`.
 
