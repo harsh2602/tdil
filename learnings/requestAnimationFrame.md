@@ -1,5 +1,6 @@
 ## requestAnimationFrame
 
+The window.requestAnimationFrame() method tells the browser that you wish to perform an animation and requests that the browser call a specified function to update an animation before the next repaint. 
 To run smooth animations(`60 fps`) we could include an animation logic in setinterval as below:
 
 ```
