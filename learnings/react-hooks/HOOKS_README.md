@@ -7,3 +7,4 @@ Shout out to `Steve Kinney` and his FrontendMasters [course](https://frontendmas
 3. [useEffect](useEffect.md)
 4. [Custom Hook](building-a-custom-hook.md)
 5. [useReducer](useReducer.md)
+6. [useContext](useContext.md)
