@@ -6,3 +6,4 @@ Shout out to `Steve Kinney` and his FrontendMasters [course](https://frontendmas
 2. [useState](useState.md)
 3. [useEffect](useEffect.md)
 4. [Custom Hook](building-a-custom-hook.md)
+5. [useReducer](useReducer.md)
