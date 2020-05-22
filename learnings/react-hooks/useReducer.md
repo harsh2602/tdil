@@ -56,6 +56,7 @@ const reducer = (state = [], action) => {
     });
   }
   return state;
+}
 
 
 // const initialState = [
@@ -72,7 +73,7 @@ const reducer = (state = [], action) => {
 const App = () => {
   const [todos, dispatch] = useReducer(reducer, initialState);
 
-  const addTodo = ({ person, reason }) => {
+  const addTodo = ({ name, description }) => {
     dispatch({
       type: ADD_TODO,
       payload: {
@@ -107,7 +108,7 @@ const App = () => {
 const Todos = ({ todos = [], onFinish }) => {
   return (
     <section>
-      {todos.map(grudge => (
+      {todos.map(todo => (
         <Todo key={todo.id} todo={todo} onFinish={onFinish} />
       ))}
     </section>
@@ -225,7 +226,7 @@ useCallback(fn, deps) is equivalent to useMemo(() => fn,deps)
 Hence, we will update our action creators with useCallback
 
 ```
-const addTodo = useCallback(({ person, reason }) => {
+const addTodo = useCallback(({ name, description }) => {
     dispatch({
       type: ADD_TODO,
       payload: {
