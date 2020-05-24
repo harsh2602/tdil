@@ -8,6 +8,9 @@ function this_is_a_wrapper_function() {
     console.log("I come from a thunk");
   }
 }
+
+const execLater = this_is_a_wrapper_function();
+execLater(); // I come from a thunk
 ```
 
 Hence, you can see from the code snippet that the idea is that it is code that is to be executed later.
