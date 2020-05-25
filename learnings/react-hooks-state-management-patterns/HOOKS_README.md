@@ -8,3 +8,5 @@ Shout out to `Steve Kinney` and his FrontendMasters [course](https://frontendmas
 4. [Custom Hook](building-a-custom-hook.md)
 5. [useReducer](useReducer.md)
 6. [useContext](useContext.md)
+7. [AJAX Patterns](ajax-patterns.md)
+8. [Handling Forms](handling-forms.md)
