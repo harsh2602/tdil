@@ -79,3 +79,14 @@ input PetInput {
 
 This is because GraphQL internals treat the AST for input types differently than the internals for type.
 
+On the client side: 
+
+```
+{
+  pets(input: { type: "DOG", name: "Nathan"}) {
+  id
+  type
+  name
+  }
+}
+```
