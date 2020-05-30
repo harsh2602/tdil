@@ -20,7 +20,6 @@ type Pet {
   id: ID!
   name: String!
   img: String!
-
 }
 
 type Query {
@@ -38,7 +37,7 @@ const resolver = {
 
 1. `initialValue`: Since pets is resolver for top level, the first argument is undefined. If you were resolving for a field e.g. `id` under type Pet, since Pet is resolved first the initialvalue would be a pet.
 
-2. `query object`: If you send any arguments to run your query against e.g. a particular type of pet. 
+2. `argument`: An object with arguments to run your query against e.g. a particular type of pet. Will be `undefined` if nothing is passed. Note that these have be defined in the schema and cannot be any arbitrary value.
 
 3.  `context object`: This is third argument in the server object. Whatever extra information you want to pass can be passed in the context object:
 

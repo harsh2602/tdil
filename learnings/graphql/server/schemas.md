@@ -1,6 +1,6 @@
 ## Schemas
 
-A schema is like a contract that defines how your data will look like. Once you create a graphQL server you would need to create a schema. It is where you define type defintions using a `Schema Definition Language (SDL)`. 
+A schema is like a contract that defines how your data will look like. Once you create a graphQL server you would need to create a schema. It is where you define type defintions using a `Schema Definition Language (SDL)`. Everything you want to do in graphql goes through your schema.
 
 Parts of Schema:
 
