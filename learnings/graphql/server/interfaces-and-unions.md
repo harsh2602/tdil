@@ -41,6 +41,8 @@ const resolvers = {
 }
 ```
 
+##### NOTE: __resolveType has 2 more arguments: context and info (same as described in resolvers)
+
 On the client side you need to query for the differing field using the special `... on` syntax:
 
 ```

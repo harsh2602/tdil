@@ -53,4 +53,4 @@ const server = new ApolloServer({
 //We will see an example later for 2 and 3
 ```
 
-4. `abstract syntax tree`: This can be used for projections. Really advanced. Not going to use them most times.
+4. `info`: This argument contains the `abstract syntax tree` info which can be used for projections. Really advanced. Not going to use them most times.
