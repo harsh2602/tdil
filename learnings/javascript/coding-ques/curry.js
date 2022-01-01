@@ -1,3 +1,10 @@
+/**
+ * It takes a function and returns a new function that is a curried version of the original
+function.
+ * @param fn - the function to curry
+ * @returns A function that takes the remaining arguments and returns a function that takes the
+remaining arguments.
+ */
 function curry(fn) {
   return function curried(...args) {
     if (args.length >= fn.length) {

@@ -1,3 +1,10 @@
+/**
+ * The myReduce method takes two arguments, a reducer function and an initial value. 
+ * If the initial value is undefined, it uses the first element of the array as the initial value. 
+ * It then iterates over the array, passing the accumulator and the current element to the reducer
+function. 
+ * It returns the accumulator after the last element has been processed.
+ */
 Array.prototype.myReduce = function (reducer, initialValue) {
   let input = this;
   let accumulator = initialValue;

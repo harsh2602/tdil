@@ -1,5 +1,8 @@
 // Create a simple store for DOM element
 
+/**
+ * The NodeStore class is a simple class that stores a value for a given node.
+ */
 class NodeStore {
   constructor() {
     /**

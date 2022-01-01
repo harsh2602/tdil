@@ -1,4 +1,9 @@
 // O(log(x) + log(y))
+/**
+ * The JavaScript String.prototype.replicate() method takes a number as an argument and returns a
+new string that is a concatenation of the original string repeated as many times as the number
+indicates.
+ */
 String.prototype.replicate = function (count) {
   let input = this;
   /**

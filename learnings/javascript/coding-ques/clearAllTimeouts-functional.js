@@ -11,10 +11,13 @@ function func3() {
 }
 
 /**
- * cancel all timer from window.setTimeout
+ * Clear all the timeouts that have been set.
+ * @returns None
  */
 function clearAllTimeout() {
-  // Since the timeout id is incremental, just get the largest one by making one setTimeout call and down level to clear all.
+  // Since the timeout id is incremental,
+  // just get the largest one by making
+  // one setTimeout call and down level to clear all.
   let id = setTimeout(null, 0);
   console.log('id before:', id);
   while (id >= 0) {
