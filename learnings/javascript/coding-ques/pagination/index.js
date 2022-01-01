@@ -57,7 +57,7 @@ function DisplayList(
   }
 }
 
-function SetupPagination(items, wrapper, rowsPerPage, maxDisplayPageCount) {
+function SetupPagination(items, wrapper, rowsPerPage) {
   wrapper.innerHTML = '';
   const btnFragment = document.createDocumentFragment();
 
