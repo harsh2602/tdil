@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typeahead</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Hey Apple!</h1>
+    </header>
+    <main>
+      <form autocomplete="off">
+        <label for="q"> Search Query: </label>
+        <div>
+          <input
+            type="text"
+            name="q"
+            id="q"
+            class="query"
+            onkeyup="showResults(this.value)"
+          />
+          <div id="result"></div>
+        </div>
+      </form>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

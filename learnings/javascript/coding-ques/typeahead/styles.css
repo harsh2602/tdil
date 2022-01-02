@@ -1,0 +1,25 @@
+#result {
+  padding: 3px;
+  max-width: 151px;
+}
+
+.query {
+  border: 1px solid black;
+  margin-top: 10px;
+  margin-left: 4px;
+}
+
+#result ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#result ul li {
+  padding: 5px;
+}
+
+#result ul li:hover {
+  background: #eee;
+  cursor: pointer;
+}
