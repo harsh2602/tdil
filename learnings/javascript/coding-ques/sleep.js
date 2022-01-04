@@ -5,6 +5,11 @@ const sleep = (time) =>
     }, time);
   });
 
-console.log('Hi');
-sleep(10000);
-console.log('Hello');
+async function run() {
+  await sleep(2000);
+  console.log('Hello');
+  await sleep(2000);
+  console.log('world');
+}
+
+run()
