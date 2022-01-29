@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite List</title>
+
+    <style>
+      table,
+      tr > td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <table class="table">
+        <thead>
+          <th>ID</th>
+        </thead>
+      </table>
+    </main>
+  </body>
+  <script>
+    const table = document.querySelector('.table');
+    let totalPages;
+
+    function fetchRecords(page = 1, limit = 50) {}
+
+    function renderToTable(input) {
+      const fragment = document.createDocumentFragment();
+
+      input.forEach((element, index) => {
+        const listRow = document.createElement('tr');
+        const listRowItem = document.createElement('td');
+        listRowItem.innerText = element.id;
+
+        const listRowIndexItem = document.createElement('td');
+        listRowIndexItem.innerText = `Index: ${index}`;
+
+        listRow.classList.add('table-row');
+
+        listRow.appendChild(listRowIndexItem);
+        listRow.appendChild(listRowItem);
+
+        fragment.appendChild(listRow);
+      });
+
+      table.appendChild(fragment);
+    }
+
+    function init(page = 1, limit = 300) {
+      fetch(`http://localhost:3000/attacks?page=${page}&limit=${limit}`)
+        .then((res) => res.json())
+        .then(({ results, total }) => {
+          if (!totalPages) {
+            totalPages = Math.ceil(total / limit);
+          }
+
+          renderToTable(results);
+        })
+        .then(() => {
+          const tableRow = document.querySelector('.table-row:last-child');
+          const observer = new IntersectionObserver(
+            (entry /** entry is the last row in the table*/) => {
+              if (page >= totalPages) return;
+
+              const lastRow = entry[0];
+              if (lastRow.isIntersecting) {
+                observer.unobserve(lastRow.target);
+                page += 1;
+
+                init(page);
+              }
+            }
+          );
+
+          observer.observe(tableRow);
+        });
+    }
+
+    init();
+  </script>
+</html>

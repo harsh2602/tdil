@@ -52,10 +52,24 @@ class Foods {
   createFoodItem(food) {
     const foodItem = document.createElement('div');
 
-    foodItem.innerText = food.image;
+    foodItem.innerText = food.image || food;
     return foodItem;
+  }
+
+  appendFoodItem(food) {
+    const foodItem = this.createFoodItem(food);
+    this._root.appendChild(foodItem);
   }
 }
 
 const foods = new Foods(rootElement, foodData);
 foods.renderList();
+
+const inputItem = document.querySelector('.food-input');
+const btnSubmit = document.querySelector('.btn-submit');
+
+btnSubmit.addEventListener('click', (e) => {
+  e.preventDefault();
+  foods.appendFoodItem(inputItem.value);
+  inputItem.value = '';
+});
