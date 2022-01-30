@@ -253,11 +253,11 @@
  * Revocable Proxies
  */
 
- let object = {
-  data: "Valuable data"
+let object = {
+  data: 'Valuable data',
 };
 
-let {proxy, revoke} = Proxy.revocable(object, {});
+let { proxy, revoke } = Proxy.revocable(object, {});
 
 // pass the proxy somewhere instead of object...
 console.log(proxy.data); // Valuable data
