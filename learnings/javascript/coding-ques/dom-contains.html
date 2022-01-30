@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="grandparent">
+      <div class="parent">
+        <div class="child"></div>
+      </div>
+    </div>
+    <div class="grandparent-sibling"></div>
+  </body>
+  <script>
+    Node.prototype.includes = function (node) {
+      const currentNode = this;
+      while (node) {
+        if (currentNode === node) return true;
+        node = node.parentNode;
+      }
+      return false;
+    };
+
+    const grandparent = document.querySelector('.grandparent');
+    const child = document.querySelector('.child');
+    const grandparentSibling = document.querySelector('.grandparent-sibling');
+
+    child.innerText = grandparent.includes(child);
+    grandparentSibling.innerText = grandparent.includes(grandparentSibling);
+  </script>
+</html>
