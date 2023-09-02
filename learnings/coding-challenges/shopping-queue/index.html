@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Checkout</title>
+  </head>
+  <body>
+    <main class="app">
+      <form>
+        <input
+          class="items-count"
+          required
+          type="number"
+          placeholder="00"
+          maxlength="2"
+          oninput="this.value=this.value.slice(0, this.maxLength)" />
+        <button type="button" class="checkout">Checkout</button>
+      </form>
+
+      <div class="lines-container"></div>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>

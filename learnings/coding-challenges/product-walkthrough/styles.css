@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: yellow;
+  margin-bottom: 5px;
+  font-size: 25px;
+}
+
+#wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+.block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: red;
+  height: 100px;
+  color: black;
+  font-size: 50px;
+}
+
+.highlighter,
+.popover {
+  position: absolute;
+  border: 2px solid black;
+}
+
+.popover {
+  background-color: whitesmoke;
+}

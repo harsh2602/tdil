@@ -1,0 +1,16 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.blocks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aquamarine;
+  height: 200px;
+  border-radius: 8px;
+  color: black;
+  font-size: 50px;
+}

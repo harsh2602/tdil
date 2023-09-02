@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40vh;
+  gap: 20px;
+  padding: 5px;
+}
+
+.stars {
+  font-size: 40px;
+  color: gray;
+  cursor: pointer;
+}
+
+.filled,
+.hovered {
+  color: gold;
+}
+
+.rating-value {
+  font-size: 30px;
+}
