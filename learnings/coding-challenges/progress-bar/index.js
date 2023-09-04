@@ -17,7 +17,7 @@ const fillProgressBar = () => {
       currentProgress = progress;
     }
 
-    if ((currentProgress = 100)) {
+    if ((currentProgress === 100)) {
       clearInterval(intervalId);
     }
 
