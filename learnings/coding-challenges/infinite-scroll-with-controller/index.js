@@ -79,9 +79,24 @@ const addItems = (data) => {
   return fragment;
 };
 
+function debounce(fn, time) {
+  let id;
+
+  return function (...args) {
+    if (id) clearTimeout(id);
+
+    id = setTimeout(() => {
+      fn.apply(this, args);
+      id = null;
+    }, time);
+  };
+}
+
+const debouncedFetchData = debounce(fetchData, 300);
+
 const showData = async (query) => {
   showLoading(true);
-  const data = await fetchData(query);
+  const data = await debouncedFetchData(query);
 
   const fragmentData = addItems(data);
 
