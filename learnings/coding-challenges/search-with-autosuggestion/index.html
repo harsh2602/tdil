@@ -8,8 +8,20 @@
   </head>
   <body>
     <main>
-      <input type="search" id="search" placeholder="Enter your query" />
-      <div id="suggestion-area"></div>
+      <input
+        aria-label="Search"
+        aria-autocomplete="list"
+        role="combobox"
+        autocapitalize="off"
+        autocomplete="off"
+        autocorrect="off"
+        autofocus
+        aria-expanded="true"
+        spellcheck="false"
+        type="search"
+        id="search"
+        placeholder="Enter your query" />
+      <section id="suggestion-area"></section>
     </main>
     <script src="index.js"></script>
   </body>
