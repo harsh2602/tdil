@@ -28,6 +28,4 @@ function create(time = 2) {
       create();
     }
   });
-
-  ele.removeEventListener('transitionend', () => {});
 }
